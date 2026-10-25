@@ -6,6 +6,14 @@ The model follows the architecture from NVIDIA's paper [*End to End Learning for
 
 ---
 
+## 🎥 Demo
+
+The car driving autonomously on the simulator track (click to watch on YouTube):
+
+[![Self-Driving Car Demo](https://img.youtube.com/vi/Hrakk4kCmLY/hqdefault.jpg)](https://youtu.be/Hrakk4kCmLY)
+
+---
+
 ## Features
 
 - **End-to-end learning**: raw pixels in, steering angle out, with no hand-written lane detection.
@@ -17,7 +25,7 @@ The model follows the architecture from NVIDIA's paper [*End to End Learning for
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ### 1. Data
 
@@ -78,7 +86,11 @@ Applied identically in training **and** in `drive.py`:
 
 Training loss is higher than validation loss because dropout and augmentation are active during training only.
 
-## Prerequisites
+---
+
+## Getting Started
+
+### Prerequisites
 
 - Python 3.9 – 3.12
 - The [Udacity Self-Driving Car Simulator](https://github.com/udacity/self-driving-car-sim) (Term 1 version)
@@ -86,8 +98,8 @@ Training loss is higher than validation loss because dropout and augmentation ar
 ### Installation
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+git clone https://github.com/ayushh9999/self-driving-car.git
+cd self-driving-car
 
 python -m venv venv
 source venv/bin/activate        # Windows: venv\Scripts\activate
@@ -122,7 +134,7 @@ Throttle is computed as `1 - speed / SPEED_LIMIT`, so the car accelerates when s
 
 ---
 
-## 🏋️ Train Your Own Model
+## Train Your Own Model
 
 1. Open `self_driving_car.ipynb` in Google Colab or Jupyter.
 2. Run all cells. The notebook clones the dataset, balances and augments it, and trains the network.
@@ -134,11 +146,11 @@ To use your own data, record a lap in the simulator's **Training Mode** and poin
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 Python · TensorFlow / Keras · OpenCV · NumPy · Pandas · imgaug · Scikit-learn · Socket.IO · Eventlet
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [NVIDIA: End to End Learning for Self-Driving Cars](https://arxiv.org/abs/1604.07316)
 - [Udacity Self-Driving Car Simulator](https://github.com/udacity/self-driving-car-sim)
