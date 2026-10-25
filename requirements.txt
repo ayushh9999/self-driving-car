@@ -1,0 +1,10 @@
+# Tested with Python 3.9 - 3.12
+tensorflow>=2.16
+numpy
+opencv-python
+pillow
+eventlet
+# The Udacity simulator only understands the OLD socket.io protocol,
+# so these two MUST stay on these versions:
+python-socketio==4.6.1
+python-engineio==3.13.2
